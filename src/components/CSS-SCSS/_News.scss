@@ -1,0 +1,116 @@
+.news{
+    .news-container{
+      max-width: 1380px;
+      padding: 60px 40px;
+  
+      margin: auto;
+  
+      .news-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 40px;
+        h6{
+          font-size: 18px;
+          font-weight: 500;
+          color: red;
+          padding-bottom: 15px;
+        }
+  
+        @media (max-width: 768px){
+          display: block;
+        }
+        .news-header-container{
+          h2{
+            margin-bottom: 0;
+          }
+        }
+        .btn-transparent{
+          margin-left: 25px;
+          min-width: 180px;
+  
+          @media (max-width: 768px){
+            margin: auto;
+            margin-top: 25px;
+          }
+        }
+      }
+      .news-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        justify-content: space-evenly;
+        gap: 20px;
+  
+        @media (max-width: 768px){
+          grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        }
+        .news-grid-container{
+          text-decoration: none;
+          margin-bottom: 45px;
+          position: relative;
+          outline: 5px solid transparent;
+          transition: background-color 0.15s ease-in-out, outline 0.15s ease-in-out;
+  
+          &:hover{
+            background-color: rgba(0, 0, 0, 0.04);
+            outline: 5px solid rgba(0, 0, 0, 0.04);
+          }
+          .date{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #f9d783;
+            width: 56px;
+            height: 64px;
+            display: grid;
+            align-items: center;
+            h4{
+              font-size: 22px;
+              font-weight: bold;
+              color: black;
+              text-align: center;
+              margin: auto;
+            }
+            span{
+              font-size: 16px;
+              font-weight: 400;
+              display: block;
+              margin-top: -3px;
+            }
+          }
+          img{
+            margin-bottom: 18px;
+            width: 100%;
+          }
+          p{
+            margin: 0 10px 10px 10px;
+            color: #666666;
+          }
+          h4{
+            width: 60%;
+            margin: 13px 10px 10px 10px;
+            color: black;
+          }
+        }
+      }
+      span{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 1.2rem;
+  
+        .dot{
+          height: 0.6rem;
+          width: 0.6rem;
+          border-radius: 50%;
+          background-color: #000;
+          opacity: 0.3;
+  
+          &:first-child {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  
+  }

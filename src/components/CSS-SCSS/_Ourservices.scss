@@ -1,0 +1,116 @@
+.our-services{
+    background-color: #F0EFE9;
+    position: relative;
+  
+     .services-container{
+      max-width: 1380px;
+      padding: 100px 40px;
+      margin: auto;
+      h6{
+        font-size: 18;
+        font-weight: 500;
+        color: red;
+        padding-bottom: 15px;
+      }
+      h2{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 45;
+        font-weight: 700;
+        padding-bottom: 22px;
+      }
+  
+      @media (max-width: 768px){
+        padding: 100px 20px;
+      }
+      h2{
+        width: 500px;
+  
+        @media (max-width: 768px){
+          width: auto;
+        }
+      }
+      .learn-more{
+        margin: 40px auto 0 auto;
+        width: 210px;
+      }
+      .services-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+        justify-content: space-between;
+        gap: 20px;
+  
+        .services-grid-container{
+          background-color: white;
+          display: grid;
+          grid-template-rows: auto auto 1fr;
+          height: 330px;
+  
+          h4{
+            margin: 0 25px;
+  
+            &::before{
+              content: '';
+              display: block;
+              height: 2px;
+              width: 40px;
+              margin: 40px 0 30px 0;
+              background-color: black;
+            }
+          }
+          p{
+            margin: 10px 25px;
+            margin-bottom: 0;
+          }
+          div{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+  
+            a{
+              width: 58px;
+              height: 58px;
+              border-radius: 50%;
+              background-color: black;
+              color: white;
+              text-decoration: none;
+              font-size: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 30px;
+              border: 1px solid black;
+              transition: background-color 0.15s ease-in-out, 0.15s ease-in-out;
+  
+              &:hover{
+                background-color: white;
+                color: black;
+              }
+            }
+          }
+        }
+        .startup{
+          background-color: #f9d783;
+          div{
+            a{
+              background-color: white;
+              color: black;
+              border: none;
+  
+              &:hover{
+                background-color: black;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .btn-transparent{
+      margin-top: 60px;
+      margin-bottom: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+    
+    }
+  }
